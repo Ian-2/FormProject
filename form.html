@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>In the Dog House</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">In the Dog House</h1>
+    <p id="description">Registration for Dog Grooming Services</p>
+    <fieldset>
+        <form id="survey-form">
+            <label id="name-label">Name: <input placeholder="Enter your name..." id="name" type="text" required></input></label>
+            <label id="email-label">Email: <input placeholder="Enter your email address..." id="email" type="email" required></input></label>
+            <label id="dog-label">Dog's Name: <input placeholder="Enter your Dog's name..." id="dog" type="text" required></input></label>
+            <label id="number-label">Dog's Age: <input placeholder="Enter your Dog's age..." id="number" min="0" max="20" type="number" required></input></label>
+            <p class="gender">Dog's Gender: </p>
+                <label> <input type="radio" class="inline" id="male" name="gender" value="male"/> Male </label>
+                <label> <input type="radio" class="inline" id="female" name="gender" value="female"/> Female </label> <br>
+            <label id="breed-label">Dog's Breed: </label>
+                <select id="dropdown" name="breed">
+                    <option value="golden">Golden Retriever</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="husky">Husky</option>
+                    <option value="poodle">Poodle</option>
+                </select>
+        </form>
+    </fieldset>
+    <fieldset>
+            <form id="survey-form">
+            <legend>Select services:</legend>
+                <label> <input type="checkbox" class="inline" id="grooming" name="grooming" value="grooming" checked/> Grooming </label>
+                <label> <input type="checkbox" class="inline" id="bath" name="bath" value="bath" checked/> Bath </label>
+                <label>Additional Comments:
+          <textarea name="bio" rows="3" cols="30" placeholder="No treats, allergies, special requests, etc."></textarea>
+			  </label>
+                <fieldset>
+
+            <input type="submit" id="submit" value="Submit">
+    </fieldset>
+            </form>
+    </fieldset>
+</body>
+</html>
